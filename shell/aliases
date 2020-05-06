@@ -43,3 +43,7 @@ alias bh="cat ~/.bash_history | grep"
 
 # Weather
 alias weather="curl wttr.in/Zurich"
+
+# squeue
+alias sq='squeue -l -u alicej'
+alias sql='squeue -l'
