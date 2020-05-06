@@ -2,6 +2,7 @@
 
 My dotfiles and configurations, to be quickly pulled in any new environment.
 
+_________________
 ## Setup
 
 ```bash
@@ -9,6 +10,7 @@ git clone https://github.com/shoshijak/dotfiles.git
 cd dotfiles
 ```
 
+_________________
 ### Bash
 
 ```bash
@@ -24,6 +26,7 @@ ln -s shell/functions ~/.functions
 
 Any machine-specific bash setup commands can be kept in `~/.shell_local`.
 
+_________________
 ### Git
 
 ```bash
@@ -51,6 +54,7 @@ git clone https://github.com/so-fancy/diff-so-fancy DIFF-SO-FANCY-PATH
 export PATH=DIFF-SO-FANCY-PATH:$PATH # add this line to `~/.shell_local`
 ```
 
+_________________
 ### Vim
 
 ```bash
@@ -77,6 +81,7 @@ cd .vim/bundle/YouCompleteMe/
 python3 install.py --clangd-completer
 ```
 
+_________________
 ### Zsh
 
 ```bash
