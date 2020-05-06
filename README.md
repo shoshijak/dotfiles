@@ -58,13 +58,17 @@ export PATH=DIFF-SO-FANCY-PATH:$PATH # add this line to `~/.shell_local`
 _________________
 ### Vim
 
+Requires Vim 7.4.1578+ compiled with Python3 support, for YouCompleteMe plugin.
+
+Download from https://www.vim.org/download.php.
+
 ```bash
 # back up
-mv .vim .vim_back
-mv .vimrc .vimrc_back
+mv ~/.vim ~/.vim_back
+mv ~/.vimrc ~/.vimrc_back
 # set up simlink
-ln -s dotfiles/vim/vimrc .vimrc
-ln -s dotfiles/vim .vim
+ln -s dotfiles/vim/vimrc ~/.vimrc
+ln -s dotfiles/vim ~/.vim
 ```
 
 #### Vim Plugins
