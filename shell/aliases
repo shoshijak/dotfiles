@@ -10,6 +10,7 @@ alias trii="(cat .gitignore & echo '.git') | sed 's/^\(.\+\)$/\1\|/' | tr -d '\n
 alias treo='tree -C -I $(git check-ignore * 2>/dev/null | tr "\n" "|").git'
 
 # ls
+alias ls='ls  --color=always --group-directories-first'
 alias lx='ls -lXB'        # sort by extension
 alias lk='ls -lSr'        # sort by size
 alias la='ls -Al'        # show hidden files
