@@ -1,0 +1,14 @@
+# General
+*.swp
+
+# Vim
+## Vundle directories
+vim/bundle/*
+vim/colors/*
+vim/pack/*
+vim/scripts/*
+vim/syntax/*
+
+# zsh
+zsh/oh-my-zsh/*
+

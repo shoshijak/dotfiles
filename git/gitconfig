@@ -1,0 +1,106 @@
+[color]
+	ui = true
+[core]
+    excludesfile = ~/.gitignore_global
+	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[diff-so-fancy]
+	markEmptyLines = true
+	changeHunkIndicators = true
+	stripLeadingSymbols = false
+	useUnicodeRuler = true
+[difftool]
+  	prompt = false
+[merge]
+	conflictstyle = diff3
+[mergetool]
+  	prompt = false
+[pull]
+    rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[alias]
+        # ------------------------------ [a] add
+        a = add
+        ap = add -p
+        unadd = reset HEAD --
+        # ------------------------------ [sh] show
+        sh = show
+        shs = show --stat --decorate
+        short = rev-parse --short
+        # ------------------------------ [s/t] status
+        s = status -s
+        st = status
+        # ------------------------------ [d] diff
+        d = diff
+        dn = diff --name-only
+        dt = difftool
+        dp = diff --no-ext-diff
+        ds = diff --stat -w
+        dc = diff --cached
+        # ------------------------------ [f] fetch
+        fa = fetch --all -p
+        # ------------------------------ [b] branch
+        b = branch
+        ba = branch -av
+        bv = branch -vv
+        bm = branch -m
+        # ------------------------------ [r] remote
+        rs = remote show
+        rv = remote -v
+        # ------------------------------ [r] remote
+        rc = rebase --continue
+        ra = rebase --abort
+        # ------------------------------ [ci] commit
+        ci = commit
+        cis = commit -m '.'
+        cim = commit -m
+        cia = commit --amend
+        # ------------------------------ [cp] cherry-pick
+        cp = cherry-pick
+        # ------------------------------ [co] checkout
+        co = checkout
+        com = checkout master
+        cb = checkout -b
+        # ------------------------------ [l] log
+        l = log --decorate
+        lo = !echo $(git branch | sed s/*//g) | gitk
+        lg = log --oneline --decorate --all --graph
+        ls = log --stat --decorate
+        la = "!git config -l | grep alias | cut -c 7- | sort"
+        l5 = log -5
+        l1 = log --pretty=oneline
+        ll = log --pretty=format:'%h %<(35)%an %s'
+        lx = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %<(65,trunc)%s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+        lp = log -p
+        ltracked = ls-tree -r master --name-only
+        tree = log --oneline --graph --all --decorate
+        # -------------------------------------------------------
+        # ------------------------------------------------------- misc
+        wc = whatchanged
+        hist = for-each-ref --sort=committerdate --format='%(refname:short) * %(authorname) * %(committerdate:relative)' refs/remotes/ | column -t -s '*'
+        who = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+        what = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+        addnw = "!sh -c 'git diff -U1 --patch -w --no-color \"$@\" | git apply --cached --ignore-space-change --ignore-whitespace' -"
+        pnw = "!sh -c 'git diff -U1 --patch -w --no-color \"$@\" "
+        k = !gitk
+        kl = !gitk --argscmd='git for-each-ref --format=\"%(refname)\" refs/heads refs/tags'
+        ka = !gitk --all
+        type = cat-file -t
+        dump = cat-file -p
+

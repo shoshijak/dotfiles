@@ -1,0 +1,46 @@
+#   -----------------------------------------------------------
+#   ZSHRC
+#   -----------------------------------------------------------
+
+#   Include unix shell functions
+#   -----------------------------------------------------------
+source .functions
+
+#   Include aliases
+#   -----------------------------------------------------------
+source .aliases
+
+#   Include aliases
+#   -----------------------------------------------------------
+source .shell_local
+
+#   zsh and powerlevel9k
+#   -----------------------------------------------------------
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh virtualenv dir vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+source $(ZSH)/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+
+# Settings
+COMPLETION_WAITING_DOTS="false"
+
+# Plugins
+plugins=(
+  brew
+  colored-man-pages
+  colorize
+  extract
+  fast-syntax-highlighting
+  git
+  python
+  virtualenv
+  virtualenvwrapper
+  z
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
