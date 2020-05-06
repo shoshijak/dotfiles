@@ -6,6 +6,7 @@ _________________
 ## Setup
 
 ```bash
+cd
 git clone https://github.com/shoshijak/dotfiles.git
 cd dotfiles
 ```
