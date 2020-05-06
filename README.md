@@ -18,10 +18,10 @@ _________________
 mv ~/.bash_profile ~/.bash_profile_back
 mv ~/.bashrc ~/.bashrc_back
 # symlink
-ln -s bash/bash_profile ~/.bash_profile
-ln -s bash/bashrc ~/.bashrc
-ln -s shell/aliases ~/.aliases
-ln -s shell/functions ~/.functions
+ln -s dotfiles/bash/bash_profile ~/.bash_profile
+ln -s dotfiles/bash/bashrc ~/.bashrc
+ln -s dotfiles/shell/aliases ~/.aliases
+ln -s dotfiles/shell/functions ~/.functions
 ```
 
 Any machine-specific bash setup commands can be kept in `~/.shell_local`.
@@ -34,8 +34,8 @@ _________________
 mv ~/.gitconfig ~/.gitconfig_back
 mv ~/.gitignore_global ~/.gitignore_global_back
 # symlink
-ln -s git/gitconfig ~/.gitconfig
-ln -s git/gitignore_global ~/.gitignore_global
+ln -s dotfiles/git/gitconfig ~/.gitconfig
+ln -s dotfiles/git/gitignore_global ~/.gitignore_global
 ```
 
 #### Configure
@@ -63,6 +63,7 @@ mv .vim .vim_back
 mv .vimrc .vimrc_back
 # set up simlink
 ln -s dotfiles/vim/vimrc .vimrc
+ln -s dotfiles/vim .vim
 ```
 
 #### Vim Plugins
@@ -88,9 +89,9 @@ _________________
 # back up
 mv ~/.zshrc ~/.zshrc_back
 # symlink
-ln -s zsh/zshrc ~/.zshrc
-ln -s shell/aliases ~/.aliases
-ln -s shell/functions ~/.functions
+ln -s dotfiles/zsh/zshrc ~/.zshrc
+ln -s dotfiles/shell/aliases ~/.aliases
+ln -s dotfiles/shell/functions ~/.functions
 ```
 
 #### oh-my-zsh
