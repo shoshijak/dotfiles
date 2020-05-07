@@ -2,15 +2,21 @@
 #   BASHRC
 #   -----------------------------------------------------------
 
+#   Include machine-specific shell commands
+#   -----------------------------------------------------------
+source ~/.shell_local
+
+#   Set variables
+#   -----------------------------------------------------------
+# Some applications read the EDITOR variable to determine your favourite text
+# editor
+export EDITOR=/usr/bin/vim
+
 #   Include unix shell functions
 #   -----------------------------------------------------------
-source .functions
+source ~/.functions
 
 #   Include aliases
 #   -----------------------------------------------------------
-source .aliases
-
-#   Include aliases
-#   -----------------------------------------------------------
-source .shell_local
+source ~/.aliases
 

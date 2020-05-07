@@ -2,17 +2,9 @@
 #   ZSHRC
 #   -----------------------------------------------------------
 
-#   Include unix shell functions
+#   Include machine-specific shell commands
 #   -----------------------------------------------------------
-source .functions
-
-#   Include aliases
-#   -----------------------------------------------------------
-source .aliases
-
-#   Include aliases
-#   -----------------------------------------------------------
-source .shell_local
+source ~/.shell_local
 
 #   zsh and powerlevel9k
 #   -----------------------------------------------------------
@@ -43,4 +35,12 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+#   Include unix shell functions
+#   -----------------------------------------------------------
+source ~/.functions
+
+#   Include aliases
+#   -----------------------------------------------------------
+source ~/.aliases
 
