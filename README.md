@@ -68,8 +68,12 @@ ln -s dotfiles/shell/functions ~/.functions
 Any machine-specific shell setup commands can be kept in `~/.shell_local`.
 
 #### Shell Awesomeness (optional)
-- Install `exa`, a modern replacement for `ls`
-- Install `bat`, a `cat` with wings
+
+Install following command-line utilities:
+
+- `exa`, a replacement for `ls`
+- `bat`, a replacement for `cat`
+- `vtop`, a replacement for `top`
 
 _________________
 ### Vim

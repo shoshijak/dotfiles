@@ -32,6 +32,11 @@ if command -v bat; then
     alias cat='bat'
 fi
 
+# top
+if command -v vtop; then
+    alias top="vtop"
+fi
+
 # vim
 alias v='vim'
 
