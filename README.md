@@ -9,6 +9,7 @@ _________________
 cd
 git clone https://github.com/shoshijak/dotfiles.git
 cd dotfiles
+./install.sh # Quick install - or follow the individual instructions below
 ```
 
 _________________
