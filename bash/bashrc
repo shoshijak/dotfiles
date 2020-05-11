@@ -4,7 +4,9 @@
 
 #   Include machine-specific shell commands
 #   -----------------------------------------------------------
-source ~/.shell_local
+if [ -f ~/.shell_local ]; then
+    source ~/.shell_local
+fi
 
 #   Set variables
 #   -----------------------------------------------------------
