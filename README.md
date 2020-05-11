@@ -38,8 +38,14 @@ ln -s dotfiles/git/gitignore_global ~/.gitignore_global
 #### Configure
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "youremail@yourdomain.com"
+touch ~/.gitconfig_local
+```
+
+Write in `gitconfig_local`:
+```bash
+[user]
+   name = TODO
+   email = TODO
 ```
 
 #### diff-so-fancy

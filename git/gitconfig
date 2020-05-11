@@ -104,4 +104,5 @@
         ka = !gitk --all
         type = cat-file -t
         dump = cat-file -p
-
+[include]
+        path = ~/.gitconfig_local
