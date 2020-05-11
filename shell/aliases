@@ -27,6 +27,10 @@ alias lsd='ls -l | grep "^d"'   #list only directories
 
 # display
 alias catcsv='column -s, -t'
+if command -v bat; then
+    # fancy cat
+    alias cat='bat'
+fi
 
 # vim
 alias v='vim'

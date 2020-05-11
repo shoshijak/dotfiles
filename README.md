@@ -21,12 +21,7 @@ mv ~/.bashrc ~/.bashrc_back
 # symlink
 ln -s dotfiles/bash/bash_profile ~/.bash_profile
 ln -s dotfiles/bash/bashrc ~/.bashrc
-ln -s dotfiles/shell/aliases ~/.aliases
-ln -s dotfiles/shell/functions ~/.functions
 ```
-
-Any machine-specific bash setup commands can be kept in `~/.shell_local`.
-
 _________________
 ### Git
 
@@ -54,6 +49,20 @@ Install from NPM, Nix, brew, or as a package on Arch and Debian Linux, or:
 git clone https://github.com/so-fancy/diff-so-fancy DIFF-SO-FANCY-PATH
 export PATH=DIFF-SO-FANCY-PATH:$PATH # add this line to `~/.shell_local`
 ```
+
+_________________
+### Shell Stuff
+
+```bash
+ln -s dotfiles/shell/aliases ~/.aliases
+ln -s dotfiles/shell/functions ~/.functions
+```
+
+Any machine-specific shell setup commands can be kept in `~/.shell_local`.
+
+#### Shell Awesomeness (optional)
+- Install `exa`, a modern replacement for `ls`
+- Install `bat`, a `cat` with wings
 
 _________________
 ### Vim
@@ -95,14 +104,9 @@ _________________
 mv ~/.zshrc ~/.zshrc_back
 # symlink
 ln -s dotfiles/zsh/zshrc ~/.zshrc
-ln -s dotfiles/shell/aliases ~/.aliases
-ln -s dotfiles/shell/functions ~/.functions
-```
 
 #### oh-my-zsh
 
 Install oh-my-zsh
 Install nerdfont
-
-Any machine-specific bash setup commands can be kept in `~/.shell_local`.
 
