@@ -32,10 +32,23 @@ if command -v bat; then
     alias cat='bat'
 fi
 
-# top
+# top processes
 if command -v vtop; then
     alias top="vtop"
 fi
+
+# processes
+if command -v procs; then
+    alias ps="procs"
+fi
+
+# disk usage
+if command -v dust; then
+    alias du="dust"
+fi
+
+# fancy diff
+alias diff="diff --color"
 
 # vim
 alias v='vim'
