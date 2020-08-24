@@ -54,6 +54,7 @@
         dp = diff --no-ext-diff
         ds = diff --stat -w
         dc = diff --cached
+        ds = diff --staged
         # ------------------------------ [f] fetch
         fa = fetch --all -p
         # ------------------------------ [b] branch
@@ -77,6 +78,7 @@
         # ------------------------------ [co] checkout
         co = checkout
         com = checkout master
+        cod = checkout develop
         cb = checkout -b
         # ------------------------------ [l] log
         l = log --decorate
