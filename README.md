@@ -71,9 +71,11 @@ Any machine-specific shell setup commands can be kept in `~/.shell_local`.
 
 Install following command-line utilities:
 
-- `exa`, a replacement for `ls`
-- `bat`, a replacement for `cat`
-- `vtop`, a replacement for `top`
+- [`exa`](https://the.exa.website/), a replacement for `ls`
+- [`bat`](https://github.com/sharkdp/bat), a replacement for `cat`
+- [`vtop`](https://github.com/MrRio/vtop/), a replacement for `top`
+- [`dust`](https://github.com/bootandy/dust), a replacement for `du`
+- [`procs`](https://github.com/dalance/procs), a replacement for `ps`
 
 _________________
 ### Vim
