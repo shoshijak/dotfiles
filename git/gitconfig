@@ -73,6 +73,7 @@
         cis = commit -m '.'
         cim = commit -m
         cia = commit --amend
+        recommit = commit --amend
         # ------------------------------ [cp] cherry-pick
         cp = cherry-pick
         # ------------------------------ [co] checkout
