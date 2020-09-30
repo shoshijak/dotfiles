@@ -17,7 +17,7 @@ else
 fi
 alias lx='ls -lXB'        # sort by extension
 alias lk='ls -lSr'        # sort by size
-alias la='ls -Al'        # show hidden files
+alias la='ls -al'        # show hidden files
 alias lr='ls -lR'        # recursice ls
 alias lt='ls -ltr'        # sort by date
 alias lm='ls -al |more'        # pipe through 'more'
