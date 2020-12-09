@@ -81,6 +81,7 @@
         com = checkout master
         cod = checkout develop
         cb = checkout -b
+        cob = checkout -b
         # ------------------------------ [l] log
         l = log --decorate
         lo = !echo $(git branch | sed s/*//g) | gitk
