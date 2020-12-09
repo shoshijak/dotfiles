@@ -234,9 +234,8 @@ let mapleader = "\<Space>"
 " hit leader then "e" to reload files that have changed outside the editor
 nnoremap <leader>e :edit<CR>
 
-" hit leader then "n" to remove line numbers
-" nnoremap <leader>n :set nu!<CR>
-"Rotate through no linenumbers, absolute line numbers, and relative line numbers:
+" hit leader then "n" to rotate through no linenumbers, absolute line numbers,
+" and relative line numbers:
 noremap <silent> <Leader>n :if &rnu<bar>set nornu<bar>set nonumber<bar>elseif &number<bar>set rnu<bar>else<bar>set number<bar>endif<cr>
 
 " hit space space to remove hilights from previous search
