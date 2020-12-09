@@ -47,9 +47,6 @@ if command -v dust; then
     alias du="dust"
 fi
 
-# fancy diff
-alias diff="diff --color"
-
 # vim
 alias v='vim'
 
